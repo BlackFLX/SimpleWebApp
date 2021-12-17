@@ -5,7 +5,7 @@ pipeline {
       stage('BuildImage') {
           steps {
               echo 'Build Dockerimage'
-              sh 'docker --version'
+              sh 'docker build . -t simplewebapp:${BUILD_NUMBER}'
           }
       }
     }
