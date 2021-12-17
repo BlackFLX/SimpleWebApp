@@ -5,7 +5,7 @@ pipeline {
       stage('BuildImage') {
           steps {
               echo 'Build Dockerimage'
-              docker --version
+              sh 'docker --version'
           }
       }
     }
